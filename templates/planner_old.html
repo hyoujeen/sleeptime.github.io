@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <input type="checkbox" id="menuToggle">
+    <meta name="viewport" content="width=device-width; height=device-height; initial-scale=0.5; maximum-scale=0.5; minimum-scale=0.5;">
+    <head>
+        <title> TITLE </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel= "stylesheet" type="text/css" href="static/main.css" />
+    </head>
+
+<body>
+  <header>
+    <nav class ="site-nav">
+
+    </nav>
+    <div class="menu">
+    	<ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="planner.html">PLANNER</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+    <form action={{url_for("answer")}} method = "post">
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="firstclass" name="firstclass" placeholder="What time is your first class?">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="sleeptime" name="sleeptime"placeholder="When would you like to go to bed?">
+        </div>
+      </div>
+
+     <!--  <div class="row">
+        <div class="col-75">
+          <input type="text" id="task5" placeholder="Task 5?">
+        </div>
+      </div> -->
+
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="task1" placeholder="Task 1?">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="task2" placeholder="Task 2?">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="task3" placeholder="Task 3?">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="task4" placeholder="Task 4?">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-75">
+          <input type="text" id="task5" placeholder="Task 5?">
+        </div>
+      </div>
+
+      <div class="row" id = "submitrow">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+</html>

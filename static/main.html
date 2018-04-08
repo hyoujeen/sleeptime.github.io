@@ -1,0 +1,375 @@
+html {
+     margin:0; /* remove default margin */
+     padding:0; /* remove default padding */
+     width:100%; /* take full browser width */
+     height:100%; /* take full browser height*/
+}
+
+body {
+    margin: 0;
+    background-color: deepskyblue;
+    padding: 15px;
+    overflow-x: hidden;
+    font-size: calc(0.75em + 1vmin);
+}
+
+body.sample {width:100%}
+
+p {
+  font-size: 20vw;
+}
+
+/* HEADER CSS */
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 200px;
+    background-color: deepskyblue;
+}
+
+/* NAV CSS (site title, dropdown menu)*/
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    background-color: honeydew;
+    top: 0;
+    text-align: center;
+}
+
+/* IMAGE */
+
+.img-div { height:100%; width:100%;}
+img { max-height:100%; }
+
+/* MENU */
+
+* { padding: 0; margin: 0; }
+body { font-family: fantasy; }
+a { text-decoration: none; color: black; }
+li { list-style-type: none; }
+
+div a {
+	display: block;
+	padding: 8px 0;
+	border-bottom: 1px solid #C3AA6E;
+	color: blue;
+}
+div a:hover { background: black; color: honeydew; }
+div li:last-child a { border-bottom: none; }
+
+/*-----------------------------------------*/
+
+.menu {
+	width: 180px;
+	height: 100%;
+	position: absolute;
+	background: honeydew;
+  top: 300px;
+	left: 0;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+
+}
+
+#menuToggle { display: none; }
+
+#menuToggle:checked ~ .menu { position: absolute; left: 0; }
+
+/* MOTO CSS */
+
+#moto {
+    position: relative;
+    top: 55px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 0.1em
+}
+
+#moto2 {
+    position: relative;
+    top: 45px;
+    font-size: 20px;
+    line-height: 1.2;
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 0.1em
+}
+
+/* FIRST SECTION BLURB */
+
+#blurb {
+    position: absolute;
+    top: 320px;
+    font-size: 27px;
+    line-height: 1.5;
+    color: floralwhite;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 0.15em;
+}
+
+
+/* SCROLLING */
+
+.parallax {
+    /* The image used */
+    background-image: url("https://cdn.inquisitr.com/wp-content/uploads/2016/05/AI-Google-AI-tool-parsey-mcparseface-could-detect-lies-artificial-intelligence-language-program.jpg");
+
+    /* Set a specific height */
+    min-height: 800px;
+
+    /* Set a specific width */
+    margin: 0 auto;
+
+    /* Create the parallax scrolling effect */
+    top: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* SECOND SECTION OF MAIN PAGE*/
+
+#separator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 850px;
+  width: 100%;
+  height: 800px;
+  background-color: deepskyblue;
+}
+
+
+/* BG INFO */
+
+#image {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  max-width: 750px;
+  width: 700px;
+  height: 600px;
+}
+
+
+#bgtitle {
+  position: absolute;
+  top: 60px;
+  font-size: 35px;
+  line-height: 1.2;
+  color: honeydew;
+  max-width: 40%;
+  width: 40%;
+  right: 50px;
+  text-align: right;
+  font-family: fantasy;
+  letter-spacing: 0.15em;
+
+  @media (min-width: 800px) {
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+#bgdescrip {
+  position: absolute;
+  top: 150px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: honeydew;
+  max-width: 40%;
+  width: 40%;
+  right: 50px;
+  text-align: right;
+  font-family: fantasy;
+  letter-spacing: 0.15em;
+  @media (min-width: 800px) {
+    p {
+      font-size: 10vw;
+    }
+  }
+}
+
+
+/* CRED AT BOTTOM */
+
+#cred {
+  position: absolute;
+  top: 1735px;
+  font-size: 15px;
+  line-height:1.1;
+  color: deepskyblue;
+  max-width: 100%;
+  right: 25%;
+  text-align: center;
+  font-family: fantasy;
+  letter-spacing: 0.1em;
+}
+
+
+/* SECOND SECTION OF PAGES with CREDS*/
+
+#separator2 {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 800px;
+  width: 100%;
+  height: 100px;
+  background-color: honeydew;
+}
+
+#creds {
+  position: relative;
+  top: 70px;
+  color: blue;
+  font-size:15px;
+  text-align:center;
+}
+
+/* RESUME PAGE */
+
+#resumedescrip {
+  position: absolute;
+  top: 150px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: honeydew;
+  max-width: 80%;
+  width: 80%;
+  left: 150px;
+  text-align: center;
+  font-family: fantasy;
+  letter-spacing: 0.20em;
+  @media (min-width: 800px) {
+    p {
+      font-size: 10vw;
+    }
+  }
+}
+
+#separator5 {
+  position:absolute;
+  left: 230px;
+  right: 50px;
+  top: 300px;
+  width: 75%;
+  height: 50px;
+  background-color: honeydew;
+}
+
+#image5 {
+  position: relative;
+  top: 150px;
+  left: 120px;
+  max-width: 750px;
+  height: 200px;
+}
+
+/* CONFERENCE PAPERS PAGE */
+
+#image2 {
+  position: absolute;
+  top: 280px;
+  left: 230px;
+  max-height: 75%;
+  max-width: 75%;
+}
+
+#image3 {
+  position: absolute;
+  top: 260px;
+  right: 120px;
+  max-width: 750px;
+}
+
+#separator3 {
+  position:relative;
+  left: 230px;
+  right: 50px;
+  top: 50px;
+  width: 75%;
+  height: 900px;
+  background-color: honeydew;
+}
+
+#moto3 {
+    position: relative;
+    font-size: 20px;
+    line-height: 1.2;
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 0.1em
+}
+
+#separator4 {
+  position:relative;
+  left: 230px;
+  right: 50px;
+  width: 75%;
+  height: 30px;
+  background-color: honeydew;
+}
+
+
+
+/* CONTACT PAGE */
+
+#image4 {
+  position: absolute;
+  top: 280px;
+  left: 400px;
+  max-width: 750px;
+}
+
+#contactdet {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: honeydew;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: fantasy;
+  letter-spacing: 0.15em;
+}
+
+form {
+  width: 0%;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  font-family: cursive;
+}
+
+#submitrow{
+  width: 200px;
+}
