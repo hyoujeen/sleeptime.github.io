@@ -4,7 +4,7 @@
     <input type="checkbox" id="menuToggle">
     <meta name="viewport" content="width=device-width; height=device-height; initial-scale=0.5; maximum-scale=0.5; minimum-scale=0.5;">
     <head>
-        <title> TITLE </title>
+        <title> GY$T </title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel= "stylesheet" type="text/css" href="main.css" />
     </head>
@@ -20,56 +20,42 @@
           <li><a href="planner.html">PLANNER</a></li>
       </ul>
     </div>
+    <p id="moto"> GY$T </p>
+    <p id="moto2">
+      <br />
+      Get your $h*t together.
+    </p>
   </header>
 
-    <form action="{{url_for('handle_data')}}" method = "post">
+    <form action="/handle_data" method="POST">
 
       <div class="row">
         <div class="col-75">
-          <input type="text" id="firstclass" placeholder="What time is your first class?">
+          <input type="text" id="task1" name="task1" placeholder="Task 1?">
         </div>
       </div>
 
       <div class="row">
         <div class="col-75">
-          <input type="text" id="sleeptime" placeholder="When would you like to go to bed?">
+          <input type="text" id="task2" name="task2" placeholder="Task 2?">
         </div>
       </div>
 
       <div class="row">
         <div class="col-75">
-          <input type="text" id="task5" placeholder="Task 5?">
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-75">
-          <input type="text" id="task1" placeholder="Task 1?">
+          <input type="text" id="task3" name="task3" placeholder="Task 3?">
         </div>
       </div>
 
       <div class="row">
         <div class="col-75">
-          <input type="text" id="task2" placeholder="Task 2?">
+          <input type="text" id="task4" name="task4" placeholder="Task 4?">
         </div>
       </div>
 
       <div class="row">
         <div class="col-75">
-          <input type="text" id="task3" placeholder="Task 3?">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-75">
-          <input type="text" id="task4" placeholder="Task 4?">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-75">
-          <input type="text" id="task5" placeholder="Task 5?">
+          <input type="text" id="task5" name="task5" placeholder="Task 5?">
         </div>
       </div>
 
